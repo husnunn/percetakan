@@ -125,7 +125,12 @@
       data: valueOfElement,
       success: function (response) {
         localStorage.removeItem("form");
-        console.log(response);
+        toastMixin
+                  .fire({
+                    animation: true,
+                    title: "Data Berhasil Di Tambah",
+                  })
+                  .then((result) => window.location.reload());
         
       },
       error: function (error) {

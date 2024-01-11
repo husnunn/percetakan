@@ -28,15 +28,80 @@
       <img src="images/produk/artcarton1.jpg" class="card-img-top" alt="..." />
       <div class="card-body bg-light">
         <h5 class="card-title">Print A3+ Full Colour</h5>
-        <button type="button" class="btn btn-primary" data-target="#modaldetail" data-toggle="modal">Detail</button>
+        <button type="button" class="btn btn-primary" data-target="#modaldetail1" data-toggle="modal">Detail</button>
+        <button type="button" class="btn btn-danger" disabled>Rp 13.750</button>
+      </div>
+    </div>
+
+    <div class="card mr-2 ml-2" style="width: 15rem;">
+      <img src="images/produk/stikcer.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-light">
+        <h5 class="card-title">Sticker Chromo A3+</h5>
+        <button type="button" class="btn btn-primary" data-target="#modaldetail2" data-toggle="modal">Detail</button>
+        <button type="button" class="btn btn-danger" disabled>Rp 5.000</button>
+      </div>
+    </div>
+
+    <div class="card mr-2 ml-2" style="width: 15rem;">
+      <img src="images/produk/giftbox.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-light">
+        <h5 class="card-title">Gift Box Packaging</h5>  
+        <button type="button" class="btn btn-primary" data-target="#modaldetail3" data-toggle="modal">Detail</button>
+        <button type="button" class="btn btn-danger" disabled>Rp 13.750</button>
+      </div>
+    </div>
+
+    <div class="card mr-2 ml-2" style="width: 15rem;">
+      <img src="images/produk/lanyard.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-light">
+        <h5 class="card-title">Lanyard Custom</h5>
+        <button type="button" class="btn btn-primary" data-target="#modaldetail4" data-toggle="modal">Detail</button>
+        <button type="button" class="btn btn-danger" disabled>Rp 13.750</button>
+      </div>
+    </div>
+
+
+    <div class="card mr-2 ml-2" style="width: 15rem;">
+      <img src="images/produk/kalender.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-light">
+        <h5 class="card-title">Kalender Dinding</h5>
+        <button type="button" class="btn btn-primary" data-target="#modaldetail5" data-toggle="modal">Detail</button>
+        <button type="button" class="btn btn-danger" disabled>Rp 13.750</button>
+      </div>
+    </div>
+
+    <div class="card mr-2 ml-2" style="width: 15rem;">
+      <img src="images/produk/rollbanner.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-light">
+        <h5 class="card-title">Roll Banner</h5>
+        <button type="button" class="btn btn-primary" data-target="#modaldetail6" data-toggle="modal">Detail</button>
+        <button type="button" class="btn btn-danger" disabled>Rp 13.750</button>
+      </div>
+    </div>
+
+    <div class="card mr-2 ml-2" style="width: 15rem;">
+      <img src="images/produk/banner.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-light">
+        <h5 class="card-title">Banner/Baliho</h5>
+        <button type="button" class="btn btn-primary" data-target="#modaldetail7" data-toggle="modal">Detail</button>
+        <button type="button" class="btn btn-danger" disabled>Rp 13.750</button>
+      </div>
+    </div>
+
+    <div class="card mr-2 ml-2" style="width: 15rem;">
+      <img src="images/produk/korekapi.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-light">
+        <h5 class="card-title">Korek Custom OK</h5>
+        <button type="button" class="btn btn-primary" data-target="#modaldetail8" data-toggle="modal">Detail</button>
         <button type="button" class="btn btn-danger" disabled>Rp 13.750</button>
       </div>
     </div>
   </div>
 
-  <!-- Modal Body -->
+</div>
+  <!-- Modal Detail 1 -->
   <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-  <div class="modal fade" id="modaldetail" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+  <div class="modal fade" id="modaldetail1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -73,14 +138,167 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Pesan</button>
+          <button type="button" class="btn btn-primary" data-target="#modaltambah" data-toggle="modal">Pesan</button>
         </div>
       </div>
     </div>
   </div>
+  <!-- Modal Detail 2 -->
+  <div class="modal fade" id="modaldetail2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <img src="images/produk/Untitled-1.jpg">
+                      </div>
+                      <div class="col-md-6">
+                        <table class="table table-borderless">
+                          <tr>
+                            <th>Tipe</th>
+                            <td><select>
+                              <option value="#">Standart Rp 5.000</option>
+                              <option value="#">Premium Rp 8.250</option>
+                              
+                            </select> 
+                          </tr>
 
-  <!-- Optional: Place to the bottom of scripts -->
-  <script>
-    const myModal = new bootstrap.Modal(document.getElementById("modalId"), options);
-  </script>
+
+                            <tr>
+                              <th>Bahan</th>
+                              <td><select>
+                                <option value="#">Chromo Lintex</option>
+                              </select> 
+                            </tr>
+
+                            <tr>
+                              <th>Spesifikasi</th>
+                              <td>
+                                Ukuran kertas : 48.3 x 32.5 cm <br>
+                                Area cetak : <br>
+                                - 47.5 x 31.5 cm (Standart)
+                                - 46.4 x 30.5 cm (Premium)
+                            </tr>
+
+                            <tr>
+                              <th>Cutting</th>
+                              <td><select>
+                                <option value="#">Cutting diameter 1cm +Rp 8.800</option>
+                                <option value="#">Cutting diameter 2cm +Rp 7.600</option>
+                                <option value="#">Cutting diameter 3cm +Rp 6.500</option>
+                                <option value="#">Cutting diameter 4cm +Rp 5.800</option>
+                                <option value="#">Cutting diameter 3cm +Rp 4.800</option>
+                                <option value="#">Non Cutting </option>
+                                
+                              </select> 
+                            </tr>
+
+                            <tr>
+                              <th>Catatan</th>
+                              <td>
+                                * File Sudah Ready to Print <br>
+                                * Lama Pengerjaan tidak termasuk lama delivery <br>
+                                * Tidak Berlaku untuk Hari Libur/Tanggal Merah <br>
+                                * Order Urgent / Jumlah Besar Deadline Konfirmasi
+                          
+                          
+                        </table>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Back</button>
+                    <button type="button" class="btn btn-primary">Order</button>
+                  </div>
+                </div>
+              </div>
+  </div>
+
+
+<!-- Modal Tambah -->
+<div class="modal fade" role="dialog" id="modaltambah">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="font-size: 20px">Tambah pemesanan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <form action="" method="post" id="formTambahtamu">
+          <div class="row">
+            <div class="form-group col-6"><label>Nama</label><input type="text" class="form-control" id="nama" name="nama" style="font-size: 20px" /></div>
+            <div class="form-group col-6"><label>No Telp<input type="number" class="form-control" id="noTelp" name="noTelp" style="font-size: 20px" /></div>
+            <div class="form-group col-6"><label>Jumlah</label><input type="number" class="form-control" id="jumlah" name="jumlah" style="font-size: 20px" /></div>
+              <div class="form-group col-6">
+              <label>Jenis Produk</label>
+              <select id="jProduk" name="jProduk" class="form-control" style="font-size: 20px">
+                <option value="Prin">Prin</option>
+                <option value="ftCopy">Foto copy</option>
+                <option value="cBener">Cetak Bener</option>
+              </select>
+            </div>
+            <div class="form-group col-6"><label>Tanggal Pemesanan</label><input type="date" class="form-control" id="tglPemesanan" name="tglPemesanan" style="font-size: 20px" /></div>
+            <div class="form-group col-6"><label>Target Selesai</label><input type="text" class="form-control" id="TarSel" name="TarSel" style="font-size: 20px" /></div>
+            <div class="form-group col-6"><label>Penanggung Jawab</label><input type="text" class="form-control" id="PenanggungJawab" name="PenanggungJawab" style="font-size: 20px" /></div>
+            
+           
+            <div class="form-group col-md-12">
+              <label>Pembayaran</label>
+              <select id="pembayaran" name="pembayaran" class="form-control" style="font-size: 20px">
+                <option value="Cash">Cash</option>
+                <option value="Transfer Bank">Transfer BANK</option>
+                <option value="Dana">Dana</option>
+                <option value="Gopay">Gopay</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button onclick="tambahTamu()" type="button" class="btn btn-primary" id="btnSimpan">Simpan</button>
+            <button type="button" class="btn btn-secondary" onclick="kosongForm()">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
+<script >
+
+  function tambahTamu() {
+      var data = $("#formTambahtamu").serialize();
+      // Kirim data ke server menggunakan AJAX
+      $.ajax({
+          type: "POST",
+          url: "https://tugasapi.informatikaunwaha.com/aqda/api.php/input",
+          dataType: "JSON", // Ganti dengan URL tempat Anda menyimpan fungsi PHP untuk menangani data
+          data: data,
+          success: function(response) {
+              toastMixin
+                  .fire({
+                      animation: true,
+                      title: "Data Berhasil Di Tambah",
+                  })
+                  .then((result) => window.location.reload());
+              console.log(response);
+              // Reset form setelah selesai
+              kosongForm();
+          },
+          error: function(error) {
+              console.log("Error: ", error.responseText);
+              swal({
+                  title: "Gagal",
+                  text: "Terjadi Kesalahan Harap Coba Lagi",
+                  icon: "error",
+              });
+          },
+      });
+  }
+  
+  </script>
