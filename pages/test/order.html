@@ -1,0 +1,15 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nama = $_POST["nama"];
+    $alamat = $_POST["alamat"];
+    $jumlah_cetak = $_POST["jumlah_cetak"];
+    $jenis_kertas = $_POST["jenis_kertas"];
+    $jenis_cetak = $_POST["jenis_cetak"];
+
+    // Lakukan sesuatu dengan data pesanan, misalnya menyimpannya ke database
+
+    // Redirect ke halaman konfirmasi atau halaman terima kasih
+    header("Location: konfirmasi_order.php");
+    exit();
+}
+?>
