@@ -6,7 +6,6 @@
           <div class="card-head-row">
             <div class="card-title">Data Pemesanana</div>
             <div class="card-tools">
-              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaltambah">Tambah Data</button>&nbsp;
               <button type="button" class="btn btn-primary" onclick="ambildatatamu()">Refresh Data</button>
             </div>
           </div>
@@ -32,53 +31,7 @@
     </div>
   </div>
 </div>
-<!-- Modal Tambah -->
-<div class="modal fade" role="dialog" id="modaltambah">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" style="font-size: 20px">Tambah pemesanan</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <div class="modal-body">
-        <form action="" method="post" id="formTambahtamu">
-          <div class="row">
-            <div class="form-group col-6"><label>Nama</label><input type="text" class="form-control" id="nama" name="nama" style="font-size: 20px" /></div>
-            <div class="form-group col-6"><label>No Telp<input type="number" class="form-control" id="noTelp" name="noTelp" style="font-size: 20px" /></div>
-            <div class="form-group col-6"><label>Jumlah</label><input type="number" class="form-control" id="jumlah" name="jumlah" style="font-size: 20px" /></div>
-              <div class="form-group col-6">
-              <label>Jenis Produk</label>
-              <select id="jProduk" name="jProduk" class="form-control" style="font-size: 20px">
-                <option value="Prin">Prin</option>
-                <option value="ftCopy">Foto copy</option>
-                <option value="cBener">Cetak Bener</option>
-              </select>
-            </div>
-            <div class="form-group col-6"><label>Tanggal Pemesanan</label><input type="date" class="form-control" id="tglPemesanan" name="tglPemesanan" style="font-size: 20px" /></div>
-            <div class="form-group col-6"><label>Target Selesai</label><input type="text" class="form-control" id="TarSel" name="TarSel" style="font-size: 20px" /></div>
-            <div class="form-group col-6"><label>Penanggung Jawab</label><input type="text" class="form-control" id="PenanggungJawab" name="PenanggungJawab" style="font-size: 20px" /></div>
-            
-           
-            <div class="form-group col-md-12">
-              <label>Pembayaran</label>
-              <select id="pembayaran" name="pembayaran" class="form-control" style="font-size: 20px">
-                <option value="Cash">Cash</option>
-                <option value="Transfer Bank">Transfer BANK</option>
-                <option value="Dana">Dana</option>
-                <option value="Gopay">Gopay</option>
-              </select>
-            </div>
-          </div>
 
-          <div class="modal-footer">
-            <button onclick="tambahTamu()" type="button" class="btn btn-primary" id="btnSimpan">Simpan</button>
-            <button type="button" class="btn btn-secondary" onclick="kosongForm()">Reset</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- Modal Edit -->
 <div class="modal fade" role="dialog" id="modaledit">
   <div class="modal-dialog modal-lg" role="document">
@@ -136,37 +89,9 @@
 </script>
 
 <script>
-  localStorage.halakhir = "datatamu.html|#mndatatamu";
+
 
   ambildatatamu();
-  function tambahTamu() {
-var data = $("#formTambahtamu").serialize();
-    // Kirim data ke server menggunakan AJAX
-    $.ajax({
-      type: "POST",
-      url: "https://tugasapi.informatikaunwaha.com/aqda/api.php/input",
-      dataType: "JSON", // Ganti dengan URL tempat Anda menyimpan fungsi PHP untuk menangani data
-      data: data,
-      success: function (response) {
-        swal({
-          title: "Berhasil",
-          text: "Data Berhasil Ditambahkan",
-          icon: "success",
-        });
-        console.log(response);
-        // Reset form setelah selesai
-        kosongForm();
-      },
-      error: function (error) {
-        console.log("Error: ", error.responseText);
-        swal({
-          title: "Gagal",
-          text: "Terjadi Kesalahan Harap Coba Lagi",
-          icon: "error",
-        });
-      },
-    });
-  }
 
   function kosongForm() {
     // Fungsi untuk mengosongkan form
