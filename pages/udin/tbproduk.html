@@ -229,14 +229,12 @@
         data: { id: id,kolom:'id_produk ' },
         dataType: "JSON",
         success: function (response) {
-          // swal({
-          //   title: "Berhasil",
-          //   text: "Data Berhasil Dihapus",
-          //   icon: "success",
-          // });
-          console.log(response);
-          
-          window.location.reload();
+          toastMixin
+                  .fire({
+                      animation: true,
+                      title: "Data Berhasil Di Hapus",
+                  })
+                  .then((result) => window.location.reload());
         },
         error: function (error) {
           swal({
@@ -258,11 +256,12 @@
       contentType: "application/x-www-urlencoded",
       data: data,
       success: function (response) {
-        // swal({
-        //   title: "Berhasil",
-        //   text: "Data Berhasil Ditambahkan",
-        //   icon: "success",
-        // });
+        toastMixin
+                  .fire({
+                      animation: true,
+                      title: "Data Berhasil Di Edit",
+                  })
+                  .then((result) => window.location.reload());
         console.log(response.messege);
       },
       error: function (error) {

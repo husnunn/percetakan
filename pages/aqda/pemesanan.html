@@ -174,7 +174,7 @@
       },
     });
     })
-
+ 
   // HAPUSSS TAMU
   $("#tbl-api").on("click","#hapusTamu",function(){
     id = $(this).data('id');
@@ -185,11 +185,12 @@
         data: { id: id,kolom:'id' },
         dataType: "JSON",
         success: function (response) {
-          swal({
-            title: "Deleted!",
-            text: "Data Berhasil Dihapus",
-            icon: "success",
-          });
+          toastMixin
+                  .fire({
+                      animation: true,
+                      title: "Data Berhasil Di Hapus",
+                  })
+                  .then((result) => window.location.reload());
           
         },
         error: function (error) {
@@ -212,11 +213,12 @@
       contentType: "application/x-www-urlencoded",
       data: data,
       success: function (response) {
-         swal({
-           title: "Berhasil",
-           text: "Data Berhasil Ditambahkan",
-          icon: "success",
-         });
+        toastMixin
+                  .fire({
+                      animation: true,
+                      title: "Data Berhasil Di Edit",
+                  })
+                  .then((result) => window.location.reload());
         console.log(response.messege);
       },
       error: function (error) {
